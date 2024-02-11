@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <!--==================== UNICONS ====================-->
+    <link href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" rel="stylesheet">
+
+    <!--==================== SWIPER CSS ====================-->
+    <link href="assets/css/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+    <!--==================== CSS ====================-->
+    <link href="assets/css/styles.css" rel="stylesheet">
+
+    <!--==================== EMAIL SERVICE ====================-->
+    <!-- Sweet Alert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- Email.JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init('DndYDExQYum-ttvSd');
+        })();
+    </script>
+
+    <!--==================== CALENDAR SERVICE ====================-->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script async src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
+
+    <!--==================== TITLE and Favicon ====================-->
+    <title>Kobiljon Muhammadov</title>
+    <!-- <link rel="shortcut icon" type="image/png" href="assets/img/"> -->
+    <link href="/assets/favicon_io/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+    <link href="/assets/favicon_io/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+    <link href="/assets/favicon_io/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+    <!-- <link rel="manifest" href="/site.webmanifest"> -->
+
+    <!-- MS Tile - for Microsoft apps-->
+    <meta content="https://github.com/nucerl/myPortfolio/blob/main/assets/snaps/light.png?raw=true"
+          name="msapplication-TileImage"/>
+
+    <!-- HTML Meta Tags -->
+    <title>Kobiljon Muhammadov</title>
+    <meta content="High-level experience in nuclear safety analysis and multinational nuclear project development."
+          name="description">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2367QRTG56"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-2367QRTG56');
+    </script>
+
+</head>
+
+<body>
+<!--==================== HEADER ====================-->
+<header class="header" id="header">
+    <nav class="nav container">
+        <a class="nav__logo" href="#">Kobiljon Muhammadov</a>
+
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list grid">
+                <li class="nav__item">
+                    <a class="nav__link active-link" href="#home">
+                        <i class="uil uil-estate nav__icon"></i> Home
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#about">
+                        <i class="uil uil-user nav__icon"></i> About
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#skills">
+                        <i class="uil uil-file-alt nav__icon"></i> Skills
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#projects">
+                        <i class="uil uil-briefcase-alt nav__icon"></i> Projects
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#contact">
+                        <i class="uil uil-message nav__icon"></i> Contact
+                    </a>
+                </li>
+            </ul>
+            <i class="uil uil-times nav__close" id="nav-close"></i>
+        </div>
+
+        <div class="nav__btns">
+            <!-- Theme Change Buttons -->
+            <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="uil uil-apps"></i>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!--==================== MAIN ====================-->
+<main class="main">
+    <!--==================== HOME ====================-->
+    <section class="home section" data-id="home" id="home">
+        <div class="home__container container grid">
+            <div class="home__content grid">
+                <div class="home__social">
+                    <a class="home__social-icon" href="https://www.linkedin.com/in/kobiljon-muhammadov-3b756321b/"
+                       target="_blank">
+                        <i class="uil uil-linkedin-alt"></i>
+                    </a>
+
+                    <a class="home__social-icon" href="https://www.instagram.com/qobiljon_muhammadov/" target="_blank">
+                        <i class="uil uil-instagram-alt"></i>
+                    </a>
+
+                    <a class="home__social-icon" href="https://t.me/Qobiljon_Muhammadov" target="_blank">
+                        <i class="uil uil-telegram-alt"></i>
+                    </a>
+
+                    <a class="home__social-icon" href="https://github.com/muhammadov-q" target="_blank">
+                        <i class="uil uil-github-alt"></i>
+                    </a>
+                </div>
+
+                <div class="home__img">
+                    <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <mask id="mask0" mask-type="alpha">
+                            <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547
+                                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775
+                                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666
+                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346
+                                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403
+                                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028
+                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+
+                            <image class="home__blob-img" x='12' xlink:href="assets/img/profile.png" y='18'/>
+                        </g>
+                    </svg>
+                </div>
+
+                <div class="home__data">
+                    <h1 class="home__title">Hi, I am Kobil.</h1>
+                    <h3 class="home__subtitle">Software Engineer</h3>
+                    <p class="home__description">Extensive experience in software engineering, specializing in safety
+                        analysis at the system, component, and project levels. Skilled in multinational software project
+                        development and compliance with industry standards.</p>
+                    <a class="button button--flex" href="#contact">
+                        Contact Me <i class="uil uil-message button__icon"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="home__scroll">
+                <a class="home__scroll-button button--flex" href="#about">
+                    <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                    <span class="home__scroll-name">Scroll Down</span>
+                    <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!--==================== ABOUT ====================-->
+    <section class="about section" data-id="about" id="about">
+        <h2 class="section__title">About Me</h2>
+        <span class="section__subtitle">Introduction</span>
+
+        <div class="about__container container grid">
+            <img alt="Kobiljon Muhammadov in Chicago, Illinois" class="about__img" src="assets/img/about.jpg">
+
+
+            <div class="about__data">
+                <p class="about__description">Software Engineering student at the American University of Central Asia,
+                    recipient of the fully funded U.S.-CAEF scholarship awarded by the American Councils for
+                    International Education. Please refer to my CV for further details. </p>
+
+                <div class="about__info">
+                    <div>
+                        <span class="about__info-title">03+</span>
+                        <span class="about__info-name">Years' <br> Experience</span>
+                    </div>
+
+                    <div>
+                        <span class="about__info-title">11+</span>
+                        <span class="about__info-name">Projects <br> Completed</span>
+                    </div>
+
+                    <div>
+                        <span class="about__info-title">07</span>
+                        <span class="about__info-name">Countries <br> Traveled</span>
+                    </div>
+                </div>
+
+                <div class="about__buttons">
+                    <a class="button button--flex" download="" href="assets/pdf/KobiljonMuhammadov-Resume.pdf">
+                        Download CV<i class="uil uil-download-alt button__icon"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--==================== SKILLS ====================-->
+    <section class="skills section" data-id="skills" id="skills">
+        <h2 class="section__title">Skills</h2>
+        <span class="section__subtitle">Technical Competence</span>
+
+        <div class="skills__container container grid">
+            <div>
+                <!--==================== SKILLS 1 ====================-->
+                <div class="skills__content skills__open">
+                    <div class="skills__header">
+                        <i class="uil uil-brackets-curly skills__icon"></i>
+
+                        <div>
+                            <h1 class="skills__titles">System Codes</h1>
+                            <span class="skills__subtitle">More than 2 years</span>
+                        </div>
+
+                        <i class="uil uil-angle-down skills__arrow"></i>
+                    </div>
+
+                    <div class="skills__list grid">
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Shell Scripting</h3>
+                                <span class="skills__number">Intermediate</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percantage skills__80"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Containerization</h3>
+                                <span class="skills__number">Intermediate</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percantage skills__80"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Operating Systems</h3>
+                                <span class="skills__number">Advanced</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percantage skills__sys-code"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">IaC</h3>
+                                <span class="skills__number">Beginner</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percantage skills__20"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--==================== SKILLS 2 ====================-->
+                <div class="skills__content skills__close">
+                    <div class="skills__header">
+                        <i class="uil uil-vector-square skills__icon"></i>
+
+                        <div>
+                            <h1 class="skills__titles">Soft Skills</h1>
+                            <!-- <span class="skills__subtitle">More than 2 years</span> -->
+                        </div>
+
+                        <i class="uil uil-angle-down skills__arrow"></i>
+                    </div>
+
+                    <div class="skills__list grid">
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Communication</h3>
+                                <span class="skills__number">Proficient</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percantage skills__80"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Quick Learning</h3>
+                                <span class="skills__number">Advanced</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percantage skills__100"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Teamwork</h3>
+                                <span class="skills__number">Advances</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percantage skills__100"></span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <!--==================== SKILLS 3 ====================-->
+                <div class="skills__content skills__close">
+                    <div class="skills__header">
+                        <i class="uil uil-arrow skills__icon"></i>
+
+                        <div>
+                            <h1 class="skills__titles">Programming</h1>
+                            <span class="skills__subtitle">2+ years experience</span>
+                        </div>
+
+                        <i class="uil uil-angle-down skills__arrow"></i>
+                    </div>
+
+                    <div class="skills__list grid">
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Assembly</h3>
+                                <span class="skills__number">Proficient</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percantage skills__40"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">C/C++</h3>
+                                <span class="skills__number">Advanced</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percantage skills__100"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Java</h3>
+                                <span class="skills__number">Intermediate</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percantage skills__80"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Python/Django</h3>
+                                <span class="skills__number">Intermediate</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percantage skills__80"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">HTML/CSS</h3>
+                                <span class="skills__number">Intermediate</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percantage skills__80"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">MySQL</h3>
+                                <span class="skills__number">Intermediate</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percantage skills__80"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--==================== SKILLS 4 ====================-->
+                <div class="skills__content skills__close">
+                    <div class="skills__header">
+                        <i class="uil uil-code-branch skills__icon"></i>
+
+                        <div>
+                            <h1 class="skills__titles">Miscellaneous </h1>
+                            <!-- <span class="skills__subtitle">More than 2 years</span> -->
+                        </div>
+
+                        <i class="uil uil-angle-down skills__arrow"></i>
+                    </div>
+
+                    <div class="skills__list grid">
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">DOS/UNIX</h3>
+                                <span class="skills__number">Intermediate</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percantage skills__80"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Git/Subversion</h3>
+                                <span class="skills__number">Advanced</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percantage skills__100"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Docker</h3>
+                                <span class="skills__number">Intermediate</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percantage skills__80"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">MS Office</h3>
+                                <span class="skills__number">Proficiency</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percantage skills__60"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">JUnit</h3>
+                                <span class="skills__number">Beginner</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percantage skills__40"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--==================== QUALIFICATION ====================-->
+    <section class="qualification section">
+        <h2 class="section__title">Qualifications</h2>
+        <span class="section__subtitle">Academic and Professional Career</span>
+
+        <div class="qualification__container container">
+            <div class="qualification__tabs">
+                <div class="qualification__button button--flex qualification__active" data-target="#education">
+                    <i class="uil uil-graduation-cap qualification__icon"></i>
+                    Education
+                </div>
+
+                <div class="qualification__button button--flex" data-target="#work">
+                    <i class="uil uil-briefcase-alt qualification__icon"></i>
+                    Work
+                </div>
+            </div>
+            <div class="qualification__sections">
+                <!--==================== QUALIFICATION CONTENT 1 ====================-->
+                <div class="qualification__content qualification__active" data-content id="education">
+                    <!--==================== QUALIFICATION EDUCATION 1 ====================-->
+                    <div class="qualification__data">
+                        <div>
+                            <span class="qualification__degree">B.Sc.</span>
+                            <h3 class="qualification__tittle">Software Engineering</h3>
+                            <span class="qualification__subtitle">American University of Central Asia</span>
+                            <div class="qualification__calendar">
+                                <i class="uil uil-calendar-alt"></i>
+                                2021 - Present
+                            </div>
+                        </div>
+                        <div>
+                            <span class="qualification__rounder"></span>
+                            <span class="qualification__line"></span>
+                        </div>
+                    </div>
+
+                    <!--==================== QUALIFICATION EDUCATION 2 ====================-->
+                    <div class="qualification__data">
+                        <div></div>
+                        <div>
+                            <span class="qualification__rounder"></span>
+                            <span class="qualification__line"></span>
+                        </div>
+
+                        <div>
+                            <span class="qualification__degree">Study Abroad</span>
+                            <h3 class="qualification__tittle">Computer Engineering</h3>
+                            <span class="qualification__subtitle">Southern Denmark University</span>
+                            <div class="qualification__calendar">
+                                <i class="uil uil-calendar-alt"></i>
+                                2024 Spring
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!--==================== QUALIFICATION CONTENT 2 ====================-->
+                <div class="qualification__content" data-content id="work">
+                    <!--==================== QUALIFICATION WORK  1 ====================-->
+                    <div class="qualification__data">
+                        <div>
+                            <h3 class="qualification__tittle">Java Developer Intern</h3>
+                            <span class="qualification__subtitle">Onoi Soft</span>
+                            <div class="qualification__calendar">
+                                <i class="uil uil-calendar-alt"></i>
+                                2022 January - May
+                            </div>
+                        </div>
+                        <div>
+                            <span class="qualification__rounder"></span>
+                            <span class="qualification__line"></span>
+                        </div>
+                    </div>
+
+                    <!--==================== QUALIFICATION WORK 2 ====================-->
+                    <div class="qualification__data">
+                        <div></div>
+                        <div>
+                            <span class="qualification__rounder"></span>
+                            <span class="qualification__line"></span>
+                        </div>
+
+                        <div>
+                            <h3 class="qualification__tittle"> CSR Agent</h3>
+                            <span class="qualification__subtitle">Mt.Olympus Resorts, USA</span>
+                            <div class="qualification__calendar">
+                                <i class="uil uil-calendar-alt"></i>
+                                2023 May - September
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--==================== PROJECTS ====================-->
+    <section class="projects section" data-id="projects" id="projects">
+        <h2 class="section__title">Projects</h2>
+        <span class="section__subtitle">Public Projects Only</span>
+
+        <div class="projects__container container grid">
+            <!--==================== PROJECTS 1 ====================-->
+            <div class="projects__content">
+                <div>
+                    <i class="uil uil-swatchbook projects__icon"></i>
+                    <h3 class="projects__title">VIBE Call</h3>
+                </div>
+
+                <span class="button button--flex button--small button--link projects__button">
+                            View More
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </span>
+
+                <div class="projects__modal">
+                    <div class="projects__modal-content">
+                        <h4 class="projects__modal-title">Video Calling App inspired by the design of ZOOM Meetings</h4>
+                        <i class="uil uil-times projects__modal-close"></i>
+
+                        <ul class="projects__modal-projects grid">
+                            <li class="projects__modal-project">
+                                <i class="uil uil-check-circle projects__modal-icon"></i>
+                                <p>Functional Registration</p>
+                            </li>
+                            <li class="projects__modal-project">
+                                <i class="uil uil-check-circle projects__modal-icon"></i>
+                                <p>Django Database</p>
+                            </li>
+                            <li class="projects__modal-project">
+                                <i class="uil uil-check-circle projects__modal-icon"></i>
+                                <p>Email Services</p>
+                            </li>
+                            <li class="projects__modal-project">
+                                <a href="https://github.com/muhammadov-q/Video-Calling-App"> <p>See on GitHub</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!--==================== PROJECTS 2 ====================-->
+            <div class="projects__content">
+                <div>
+                    <i class="uil uil-swatchbook projects__icon"></i>
+                    <h3 class="projects__title">Mini Projects</h3>
+                </div>
+
+                <span class="button button--flex button--small button--link projects__button">
+                            View More
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </span>
+
+                <div class="projects__modal">
+                    <div class="projects__modal-content">
+                        <h4 class="projects__modal-title">Telegram Bots, Python Game Projects and more</h4>
+                        <i class="uil uil-times projects__modal-close"></i>
+
+                        <ul class="projects__modal-projects grid">
+                            <li class="projects__modal-project">
+                                <i class="uil uil-check-circle projects__modal-icon"></i>
+                                <p>Snake game using HTML/CSS and JavaScript</p>
+                            </li>
+                            <li class="projects__modal-project">
+                                <i class="uil uil-check-circle projects__modal-icon"></i>
+                                <p>Attendance Checker Telegram Bot</p>
+                            </li>
+                            <li class="projects__modal-project-ind">
+                                <i class="uil uil-check projects__modal-icon"></i>
+                                <p>QR code generator to record student</p>
+                            </li>
+                            <li class="projects__modal-project-ind">
+                                <i class="uil uil-check projects__modal-icon"></i>
+                                <p>Using Telepy Library in Python</p>
+                            </li>
+                            <li class="projects__modal-project-ind">
+                                <i class="uil uil-check projects__modal-icon"></i>
+                                <p>MySQL Database to track data</p>
+                            </li>
+                            <li class="projects__modal-project">
+                                <i class="uil uil-check-circle projects__modal-icon"></i>
+                                <p>XO game using Python</p>
+                            </li>
+                            <li class="projects__modal-project">
+                                <i class="uil uil-check-circle projects__modal-icon"></i>
+                                <p>Gesture Detector using Python</p>
+                            </li>
+                            <li class="projects__modal-project-ind">
+                                <i class="uil uil-check projects__modal-icon"></i>
+                                <p>Reinforcement Learning</p>
+                            </li>
+                            <li class="projects__modal-project-ind">
+                                <i class="uil uil-check projects__modal-icon"></i>
+                                <p>Knowledge from Calculus</p>
+                            </li>
+                            <li class="projects__modal-project">
+                                <i class="uil uil-check-circle projects__modal-icon"></i>
+                                <p>Weather Telegram Bot using Python</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!--==================== PROJECTS 3 ====================-->
+            <div class="projects__content">
+                <div>
+                    <i class="uil uil-swatchbook projects__icon"></i>
+                    <h3 class="projects__title">MyWebsite</h3>
+                </div>
+
+                <span class="button button--flex button--small button--link projects__button">
+                            View More
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </span>
+
+                <div class="projects__modal">
+                    <div class="projects__modal-content">
+                        <h4 class="projects__modal-title">My personal web resume/portfolio</h4>
+                        <i class="uil uil-times projects__modal-close"></i>
+
+                        <ul class="projects__modal-projects grid">
+                            <li class="projects__modal-project">
+                                <i class="uil uil-check-circle projects__modal-icon"></i>
+                                <p>Using HTML/CSS and JavaScript</p>
+                            </li>
+                            <li class="projects__modal-project-ind">
+                                <i class="uil uil-check projects__modal-icon"></i>
+                                <p>Responsive Website</p>
+                            </li>
+                            <li class="projects__modal-project">
+                                <a href="https://github.com/muhammadov-q/"> <p>See on GitHub</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--==================== REQUEST MEETING ====================-->
+    <section class="project section" id="meeting">
+        <div class="project__bg">
+            <div class="project__container container grid">
+                <div class="project__data">
+                    <h2 class="project__title">Do you have any questions?</h2>
+                    <p class="project__description">Schedule a meeting and lets discuss!</p>
+                    <!-- <a href="#meeting" class="button button--flex button--white">
+                        Send a Request
+                        <i class="uil uil-message project_icon button__icon"></i>
+                    </a> -->
+                    <a class="button button--flex button--white"
+                       href="#meeting"
+                       onclick="Calendly.initPopupWidget({url: 'https://calendly.com/kobiljon_muhammadov/45-min'});return false;">
+                        Send a Request
+                        <i class="uil uil-message project_icon button__icon" href="#meeting"></i>
+                    </a>
+                </div>
+                <img alt="Kobiljon Muhammadov" class="project__img" src="assets/img/meeting.png">
+            </div>
+        </div>
+    </section>
+
+    <!--==================== TESTIMONIAL ====================-->
+    <section class="testimonial section" id="testimonials">
+        <h2 class="section__title">References</h2>
+        <span class="section__subtitle">Recommendations</span>
+
+        <div class="testimonial__container container swiper">
+            <div class="swiper-wrapper">
+                <!--==================== TESTIMONIAL 1 ====================-->
+                <div class="testimonial__content swiper-slide">
+                    <div class="testimonial__data">
+                        <div class="testimonial__header">
+                            <img alt="" class="testimonial__img" src="assets/img/default-man.png">
+
+                            <div>
+                                <h3 class="testimonial__name">Prof. Dimitrii Toksaitov</h3>
+                                <span class="testimonial__client">AUCA, Programming Professor</span>
+                            </div>
+                        </div>
+                        <!-- <div>
+                            <i class="uil uil-star testimonial__icon-star"></i>
+                            <i class="uil uil-star testimonial__icon-star"></i>
+                            <i class="uil uil-star testimonial__icon-star"></i>
+                            <i class="uil uil-star testimonial__icon-star"></i>
+                            <i class="uil uil-star testimonial__icon-star"></i>
+                        </div> -->
+                    </div>
+                    <p class="testimonial__description">I have had the privilege of knowing Kobiljon since 2021, during
+                        my class of Structured Programming at AUCA. Without hesitation, I can attest to his outstanding
+                        qualities: Kobiljon is a bright individual, demonstrating diligence in his work and upholding
+                        the highest standards of integrity.</p>
+                </div>
+
+                <!--==================== TESTIMONIAL 2 ====================-->
+                <div class="testimonial__content swiper-slide">
+                    <div class="testimonial__data">
+                        <div class="testimonial__header">
+                            <img alt="" class="testimonial__img" src="assets/img/default-woman.png">
+
+                            <div>
+                                <h3 class="testimonial__name">Prof. Elena Burova</h3>
+                                <span class="testimonial__client">AUCA, Math Professor</span>
+                            </div>
+                        </div>
+                        <!-- <div>
+                            <i class="uil uil-star testimonial__icon-star"></i>
+                            <i class="uil uil-star testimonial__icon-star"></i>
+                            <i class="uil uil-star testimonial__icon-star"></i>
+                            <i class="uil uil-star testimonial__icon-star"></i>
+                            <i class="uil uil-star testimonial__icon-star"></i>
+                        </div> -->
+                    </div>
+                    <p class="testimonial__description">I had the pleasure of meeting Kobiljon in 2021, and from our
+                        initial encounter, I've been consistently impressed by his unwavering dedication to expanding
+                        his knowledge, refining his skills, and embracing new challenges to further his career.</p>
+                </div>
+            </div>
+
+            <!-- Add Pagination -->
+            <div class="swiper-pagination swiper-pagination-testimonial"></div>
+        </div>
+    </section>
+
+    <!--==================== CONTACT ME ====================-->
+    <section class="contact section" data-id="contact" id="contact">
+        <h2 class="section__title">Contact Me</h2>
+        <span class="section__subtitle">Get in Touch</span>
+
+        <div class="contact__container container grid">
+            <div>
+                <div class="contact__information">
+                    <i class="uil uil-phone contact__icon"></i>
+
+                    <div>
+                        <h3 class="contact__title">Call Me</h3>
+                        <a class="contact__subtitle" href="tel:+4550640737">+45 50640737</a>
+                    </div>
+                </div>
+
+                <div class="contact__information">
+                    <i class="uil uil-envelope contact__icon"></i>
+
+                    <div>
+                        <h3 class="contact__title">Email</h3>
+                        <!-- <span class="contact__subtitle">erolbicer@live.com</span> -->
+                        <p><a class="contact__subtitle" href="mailto:muhammadov_q@auca.kg">muhammadov_q@auca.kg</a></p>
+                    </div>
+                </div>
+
+                <div class="contact__information">
+                    <i class="uil uil-map-marker contact__icon"></i>
+
+                    <div>
+                        <h3 class="contact__title">Location</h3>
+                        <a class="contact__subtitle" href="https://www.google.com/maps/place/Odense,+Denmark"
+                           target="_blank">Odense, Denmark</a>
+                    </div>
+                </div>
+            </div>
+
+            <form action="" class="contact__form grid">
+                <div class="contact__inputs grid">
+                    <div class="contact__content">
+                        <label class="contact__label" for="">Full Name</label>
+                        <input class="contact__input" id="fullName" onkeyup="validateName()" placeholder="Enter full name"
+                               type="text">
+                        <span class="contact__subtitle" id="name-error"></span>
+                    </div>
+                    <div class="contact__content">
+                        <label class="contact__label" for="">Email</label>
+                        <input class="contact__input" id="email_id" onkeyup="validateEmail()" placeholder="Enter email address"
+                               type="email">
+                        <span class="contact__subtitle" id="email-error"></span>
+                    </div>
+                </div>
+                <div class="contact__content">
+                    <label class="contact__label" for="">Subject</label>
+                    <input class="contact__input" id="subject" placeholder="Enter a subject line" type="text">
+                </div>
+                <div class="contact__content">
+                    <label class="contact__label" for="">Message</label>
+                    <textarea class="contact__input" cols="0" id="message" name="" onkeyup="validateMessage()"
+                              placeholder="Enter your message" rows="7"></textarea>
+                    <span class="contact__subtitle" id="message-error"></span>
+                </div>
+                <div>
+                    <a class="button button--flex" onclick="return SendMail()">
+                        Send Message
+                        <i class="uil uil-message button__icon"></i>
+                    </a>
+                </div>
+            </form>
+        </div>
+    </section>
+</main>
+
+<!--==================== FOOTER ====================-->
+<footer class="footer">
+    <div class="footer__bg">
+        <div class="footer__container container grid">
+            <div>
+                <a class="footer__title" href="#">Kobiljon Muhammadov</a><br>
+                <span class="footer__subtitle">Software Engineer</span>
+            </div>
+
+            <ul class="footer__links">
+                <li>
+                    <a class="footer__link" href="#projects">Projects</a>
+                </li>
+
+                <li>
+                    <a class="footer__link" href="#about">About</a>
+                </li>
+
+                <li>
+                    <a class="footer__link" href="#skills">Skills</a>
+                </li>
+
+                <li>
+                    <a class="footer__link" href="#testimonials">References</a>
+                </li>
+                <li>
+                    <a class="footer__link" href="#meeting">Meeting</a>
+                </li>
+
+                <li>
+                    <a class="footer__link" href="#home">Home</a>
+                </li>
+            </ul>
+
+            <div class="footer__socials">
+                <a class="footer__social" href="https://www.linkedin.com/in/kobiljon-muhammadov-3b756321b/"
+                   target="_blank">
+                    <i class="uil uil-linkedin-alt"></i>
+                </a>
+
+                <a class="footer__social" href="https://www.instagram.com/qobiljon_muhammadov/" target="_blank">
+                    <i class="uil uil-instagram-alt"></i>
+                </a>
+
+                <a class="footer__social" href="https://t.me/Qobiljon_Muhammadov" target="_blank">
+                    <i class="uil uil-telegram-alt"></i>
+                </a>
+
+                <a class="footer__social" href="https://github.com/muhammadov-q" target="_blank">
+                    <i class="uil uil-github-alt"></i>
+                </a>
+
+            </div>
+        </div>
+
+        <p class="footer__copy">&#169; 2024. All rights reserved.</p>
+    </div>
+</footer>
+
+<!--==================== SCROLL TOP ====================-->
+<a class="scrollup" href="" id="scroll-up">
+    <i class="uil uil-arrow-up scrollup__icon"></i>
+</a>
+
+<!--==================== SWIPER JS ====================-->
+<script src="assets/js/swiper-bundle.min.js"></script>
+
+<!--==================== MAIN JS ====================-->
+<script src="assets/js/main.js"></script>
+</body>
+</html>
