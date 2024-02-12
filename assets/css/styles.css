@@ -41,6 +41,8 @@
 
     /*========== Margenes Bottom ==========*/
     /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
+    --mb-0: 0;
+    --mb-0-0: 0;
     --mb-0-25: .25rem;
     --mb-0-5: .5rem;
     --mb-0-75: .75rem;
@@ -870,29 +872,6 @@ img {
   bottom: 0;
 }
 
-
-/*==================== VIDEOS ====================*/
-
-.videos__content-top{
-  display: grid;
-  grid-template-columns: repeat(1, minmax(0, 1fr));
-  margin-bottom: -.5rem;
-}
-
-.videos__content{
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1rem;
-  /* margin-bottom: var(--mb-2-5); */
-}
-
-.videos__subtitle {
-  text-align: center;
-  display: block;
-  font-size: var(--medium-font-size);
-  margin-bottom: .1rem;
-}
-
 /*==================== iFRAME ====================*/
 
 .iframe__container {
@@ -907,24 +886,6 @@ img {
 .iframe{
   border-radius: 1rem;
   border: none;
-}
-
-/*==================== PRESENTATION ====================*/
-
-.presentation__content{
-  display: grid;
-  grid-template-columns: repeat(1, minmax(0, 1fr));
-  padding: 0;
-  gap: 1rem;
-  /* margin-bottom: var(--mb-2-5); */
-}
-
-
-.presentation__subtitle {
-  text-align: center;
-  display: block;
-  font-size: var(--medium-font-size);
-  margin-bottom: .1rem;
 }
 
 /*==================== CONTACT ME ====================*/
@@ -1033,14 +994,12 @@ img {
   margin-top: var(--mb-3);
 }
 
-
 .footer__title,
 .footer__subtitle,
 .footer__link,
 .footer__social{
   color: #FFF;
 }
-
 
 /*========== SCROLL UP ==========*/
 .scrollup{
@@ -1366,7 +1325,7 @@ img {
 /* For large devices */
 
 @media screen and (min-width: 1024px){
-  .heder,
+  .header,
   .main,
   .footer__container{
     padding: 0;
