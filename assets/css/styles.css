@@ -1364,8 +1364,9 @@ img {
 }
 
 /* For large devices */
+
 @media screen and (min-width: 1024px){
-  .header,
+  .heder,
   .main,
   .footer__container{
     padding: 0;
@@ -1382,7 +1383,7 @@ img {
   .projects__container{
     grid-template-columns: repeat(3, 238px);
   }
-  
+
   .paper__content{
     column-gap: 5rem;
   }
@@ -1416,4 +1417,3 @@ img {
   }
 
 }
-
