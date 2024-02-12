@@ -41,8 +41,6 @@
 
     /*========== Margenes Bottom ==========*/
     /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
-    --mb-0-0: 0;
-    --mb-0: 0;
     --mb-0-25: .25rem;
     --mb-0-5: .5rem;
     --mb-0-75: .75rem;
@@ -872,6 +870,29 @@ img {
   bottom: 0;
 }
 
+
+/*==================== VIDEOS ====================*/
+
+.videos__content-top{
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  margin-bottom: -.5rem;
+}
+
+.videos__content{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  /* margin-bottom: var(--mb-2-5); */
+}
+
+.videos__subtitle {
+  text-align: center;
+  display: block;
+  font-size: var(--medium-font-size);
+  margin-bottom: .1rem;
+}
+
 /*==================== iFRAME ====================*/
 
 .iframe__container {
@@ -886,6 +907,24 @@ img {
 .iframe{
   border-radius: 1rem;
   border: none;
+}
+
+/*==================== PRESENTATION ====================*/
+
+.presentation__content{
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  padding: 0;
+  gap: 1rem;
+  /* margin-bottom: var(--mb-2-5); */
+}
+
+
+.presentation__subtitle {
+  text-align: center;
+  display: block;
+  font-size: var(--medium-font-size);
+  margin-bottom: .1rem;
 }
 
 /*==================== CONTACT ME ====================*/
@@ -1048,7 +1087,7 @@ img {
 
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
-@media screen and (max-width: 350px) and (max-width: 567px){
+@media screen and (max-width: 350px){
   .container{
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
@@ -1122,7 +1161,7 @@ img {
 
 }
 /* For medium devices */
-@media screen and (min-width: 568px) and (max-width: 767px){
+@media screen and (min-width: 568px){
   .home__content{
     grid-template-columns: max-content 1fr 1fr;
   }
@@ -1150,7 +1189,7 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px){
   .container{
     margin-left: auto;
     margin-right: auto;
@@ -1162,10 +1201,6 @@ img {
 
   .section{
     padding: 6rem 0 2rem;
-  }
-
-  .home__data{
-    grid-column: initial;
   }
 
   .section__subtitle{
@@ -1340,10 +1375,6 @@ img {
     width: 320px;
   }
 
-  .home__data{
-    grid-column: initial;
-  }
-
   .home__social{
     transform: translateX(-6rem);
   }
@@ -1383,4 +1414,6 @@ img {
   .contact__inputs{
     grid-template-columns: repeat(2, 1fr);
   }
+
 }
+
