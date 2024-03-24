@@ -28,5 +28,16 @@
         <img src="images/R2.png" alt="" />
       </div>
     </div>
+
+  <script>
+      // Remove .html extension from URLs
+      const links = document.querySelectorAll('a');
+      links.forEach(link => {
+        const href = link.getAttribute('href');
+        if (href && href.endsWith('.html')) {
+          link.setAttribute('href', href.slice(0, -5)); // remove last 5 characters (.html)
+        }
+      });
+    </script>
   </body>
 </html>
