@@ -7,11 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Kamronbek Muhammadov Nikoh to'yi</title>
 
-     <meta property="og:title" content="Nikoh to'yi">
-    <meta property="og:description" content="Kamronbek Muhammadov Nikoh to'yi - Seshanba, 13 Avgust 2024 'AFSONA' koshonalar saroyi, Buxoro shahri">
+     <!-- jQuery and Countdown Plugin -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.rawgit.com/hilios/jQuery.countdown/2.2.0/dist/jquery.countdown.min.js"></script>
+
+     <meta property="og:title" content="Kamronbek Muhammadov Nikoh to'yi">
+    <meta property="og:description" content="Seshanba, 13 Avgust 2024 'AFSONA' restoran">
     <meta property="og:locale" content="uz_UZ">
     <meta property="og:image" content="https://kobiljon.tech/Wedding/image/main.png">
-    <meta property="og:url" content="http://kobiljon.tech/Wedding/index.html">
+    <meta property="og:url" content="https://kobiljon.tech/Wedding/index.html">
     <meta name="twitter:card" content="summary_large_image">
 
     <!-- Bulma CSS -->
@@ -19,10 +23,6 @@
     <link rel="stylesheet" href="https://unpkg.com/bulma-tooltip@0.1.5/dist/bulma-tooltip.min.css">
     <link rel="stylesheet" type="text/css" href="css/menikah.css">
     <link rel="stylesheet" type="text/css" href="css/jquery.countdown.css">
-
-    <!-- jQuery and Countdown Plugin -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.rawgit.com/hilios/jQuery.countdown/2.2.0/dist/jquery.countdown.min.js"></script>
 
     <link rel="icon" type="image/png" href="image/favicon.png">
 </head>
@@ -79,27 +79,40 @@
                         <li class="separator">:</li>
                         <li><span class="hours">00</span><p class="hours_text">Soat</p></li>
                         <li class="separator">:</li>
-                        <li><span class="minutes">00</span><p class="minutes_text">Minut</p></li>
+                        <li><span class="minutes">00</span><p class="minutes_text">Daqiqa</p></li>
                         <li class="separator">:</li>
-                        <li><span class="seconds">00</span><p class="seconds_text">Daqiqa</p></li>
+                        <li><span class="seconds">00</span><p class="seconds_text">Sekund</p></li>
                     </ul>
                 </div>
-                <script type="text/javascript">
-                    $(document).ready(function () {
-                        var targetDate = '08/13/2024 00:00:00';
-                        $('#hitungmundur').countdown(targetDate, function (event) {
-                            $(this).html(event.strftime(''
-                                + '<li><span class="days">%D</span><p class="days_text">Kun</p></li>'
-                                + '<li class="separator">:</li>'
-                                + '<li><span class="hours">%H</span><p class="hours_text">Soat</p></li>'
-                                + '<li class="separator">:</li>'
-                                + '<li><span class="minutes">%M</span><p class="minutes_text">Minut</p></li>'
-                                + '<li class="separator">:</li>'
-                                + '<li><span class="seconds">%S</span><p class="seconds_text">Daqiqa</p></li>'
-                            ));
-                        });
-                    });
-                </script>
+                <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.rawgit.com/hilios/jQuery.countdown/2.2.0/dist/jquery.countdown.min.js"></script>
+<script>
+  $(document).ready(function() {
+    // Log to check if the code runs
+    console.log("Document ready, initializing countdown.");
+
+    let targetDate = '2024/08/13 00:00:00'; // Updated format
+    console.log("Target date:", targetDate);
+
+    // Initialize countdown
+    $('#hitungmundur').countdown(targetDate, function(event) {
+      console.log("Countdown event triggered.");
+
+      $(this).html(event.strftime(''
+        + '<li><span class="days">%D</span><p class="days_text">Kun</p></li>'
+        + '<li class="separator">:</li>'
+        + '<li><span class="hours">%H</span><p class="hours_text">Soat</p></li>'
+        + '<li class="separator">:</li>'
+        + '<li><span class="minutes">%M</span><p class="minutes_text">Daqiqa</p></li>'
+        + '<li class="separator">:</li>'
+        + '<li><span class="seconds">%S</span><p class="seconds_text">Sekund</p></li>'
+      ));
+    }).on('error.countdown', function(event) {
+      console.log("Countdown error:", event);
+    });
+  });
+</script>
+
                 <!-- End Countdown -->
         </div>
         <!-- End Hero Content-->
@@ -133,7 +146,7 @@
     <div class="main-content">
     <!-- Begin regular-section-->
      <section class="section-light no-padding-top regular-section has-text-centered has-vertically-aligned-content" id="regular-section">
-        
+
         <div data-aos="fade-up" data-aos-easing="linear">
           <img src="image/bismillah.png" class="bismillah has-text-centered" alt="Bismillahirrahmaanirrahiim">
         </div>
@@ -157,7 +170,7 @@
           <div class="nama-lengkap">
             Mening Ayolim
           </div>
-           
+
         </div>
         <span class="space40px"></span>
         <div data-aos="fade-up" data-aos-easing="linear">
@@ -166,8 +179,8 @@
         <span class="space40px"></span>
         <span class="space40px"></span>
       </section>
-      <!-- End regular-section-->    
-      
+      <!-- End regular-section-->
+
       <!-- Begin Vaqt Section -->
       <section class="section-dark" id="Waktu">
         <div class="container">
@@ -178,26 +191,23 @@
           <div class="columns is-multiline" data-aos="fade-up" data-aos-easing="linear">
             <div
               class="column is-4 has-vertically-aligned-content">
-            
+
               <p class="is-larger has-text-centered">
                   <div class="waktu tanggal-hari has-text-centered">Seshanba</div>
                   <div class="waktu tanggal-angka has-text-centered">13</div>
                   <div class="waktu tanggal-bulan has-text-centered">Avgust 2024</div>
               </p>
-            
+
             </div>
             <div class="column is-4 has-vertically-aligned-content">
-            
               <p class="waktu is-larger has-text-centered">
                 Erkaklar uchun:
                 <br>
                 <strong>7.00 Ertalab</strong>
               </p>
-            
             </div>
 
             <div class="column is-4 has-vertically-aligned-content">
-              
               <h1 class="waktu is-larger has-text-centered">
                 Ayollar uchun:
                 <br>
@@ -240,6 +250,7 @@
             </a>
           </div>
         </div>
+        </div>
       </section>
       <!-- End Lokasi Content -->
 
@@ -248,9 +259,7 @@
     <!-- Begin Footer -->
     <div class="footer">
       <div class="container">
-        <a href="https://github.com/daengdoang/daeng-sherly-menikah" class="has-vertically-align">
           <p class="has-vertically-align">2024 &copyAll rights reserved. Powered by Kobiljon.tech </p>
-        </a>
       </div>
     </div>
     <!-- End Footer -->
