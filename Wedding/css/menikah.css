@@ -45,8 +45,6 @@ html {
   font-family: 'Raleway', sans-serif;
 }
 
-
-
 .hero .title {
   font-family: 'Rouge Script', sans-serif;
   font-weight: 700;
@@ -55,6 +53,21 @@ html {
   padding-bottom: 5px;
   color: whitesmoke;
 }
+
+.hero .contact-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero .contact-info a {
+        color: #ffffff; /* Change to your preferred color */
+        text-decoration: none;
+    }
+
+.hero .contact-info a:hover {
+        color: #333; /* Change to your preferred hover color */
+    }
 
 .hero .subtitle {
   padding: 35px;
