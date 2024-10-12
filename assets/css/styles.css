@@ -1,5 +1,8 @@
 /*==================== GOOGLE FONTS ====================*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 /*==================== VARIABLES CSS ====================*/
 :root {
@@ -118,9 +121,9 @@ body {
   background-color: var(--body-color);
   color: var(--text-color);
 
-    opacity: 1;
-    background-image: radial-gradient(#444444 0.75px, rgba(255, 255, 255, 0) 0.75px);
-    background-size: 25px 25px;
+    /*opacity: 1;*/
+    /*background-image: radial-gradient(#444444 0.75px, rgba(255, 255, 255, 0) 0.75px);*/
+    /*background-size: 25px 25px;*/
 }
 
 h1, h2, h3, h4 {
